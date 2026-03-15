@@ -24,6 +24,8 @@ const About = () => {
               Founded in 2024, LUXE. was born out of a desire for simplicity. We believe that true quality doesn't need to shout—it speaks through craftsmanship, material, and timeless design.
             </p>
           </motion.div>
+
+          {/* Image Section */}
           
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
