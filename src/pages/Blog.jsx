@@ -3,6 +3,8 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, User, Tag } from 'lucide-react';
 
+
+
 const Blog = () => {
   const posts = [
     {
