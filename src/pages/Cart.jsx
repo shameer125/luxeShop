@@ -5,9 +5,10 @@ import { useNavigate, Link } from 'react-router-dom';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 
 const Cart = () => {
-  const [cart, setCart] = useLocalStorage('luxe_cart', []);
-  const navigate = useNavigate();
+const [cart, setCart] = useLocalStorage('luxe_cart', []);
+const navigate = useNavigate();
 
+  
   const updateQuantity = (id, delta) => {
     setCart(cart.map(item => 
       item.id === id ? { ...item, quantity: Math.max(1, item.quantity + delta) } : item
