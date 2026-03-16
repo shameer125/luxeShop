@@ -5,12 +5,13 @@ import { User, Package, MapPin, CreditCard, Settings, LogOut, ChevronRight } fro
 import { useStore } from '../context/StoreContext';
 
 const Profile = () => {
-  const { user, setUser, orders } = useStore();
-  const navigate = useNavigate();
-  const [activeTab, setActiveTab] = React.useState('Overview');
-  const [isEditingProfile, setIsEditingProfile] = React.useState(false);
-  const [profileData, setProfileData] = React.useState({ name: user?.name || '', email: user?.email || '' });
+const { user, setUser, orders } = useStore();
+const navigate = useNavigate();
+const [activeTab, setActiveTab] = React.useState('Overview');
+const [isEditingProfile, setIsEditingProfile] = React.useState(false);
+const [profileData, setProfileData] = React.useState({ name: user?.name || '', email: user?.email || '' });
 
+  
   if (!user) {
     navigate('/login');
     return null;
