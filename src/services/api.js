@@ -13,6 +13,7 @@ const safeParse = (data, fallback) => {
   }
 };
 
+
 export const api = {
   // Products
   getProducts: async () => {
@@ -37,6 +38,7 @@ export const api = {
     }
   },
 
+  
   // Orders
   getOrders: async () => {
     await delay(1200);
