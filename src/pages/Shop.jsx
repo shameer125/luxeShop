@@ -10,6 +10,7 @@ const Shop = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const categoryParam = searchParams.get('category') || 'All';
   
+  
   const [activeCategory, setActiveCategory] = useState(categoryParam);
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState('Featured');
