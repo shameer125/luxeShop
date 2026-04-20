@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom';
 import { Heart, ShoppingBag, Trash2, ArrowRight } from 'lucide-react';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 
+
 const Wishlist = () => {
   const [wishlist, setWishlist] = useLocalStorage('luxe_wishlist', []);
   const [cart, setCart] = useLocalStorage('luxe_cart', []);
+
 
   const removeItem = (id) => {
     setWishlist(wishlist.filter(item => item.id !== id));
@@ -22,6 +24,7 @@ const Wishlist = () => {
     removeItem(product.id);
   };
 
+  
   if (wishlist.length === 0) {
     return (
       <div className="pt-48 pb-32 text-center max-w-7xl mx-auto px-4">
