@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { MapPin, Phone, Mail, Send, CheckCircle2 } from 'lucide-react';
 
+
 const Contact = () => {
   const [formStatus, setFormStatus] = useState('idle'); // idle, sending, success
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -40,6 +42,7 @@ const Contact = () => {
                 </div>
               </div>
 
+              
               <div className="flex items-start space-x-6 group">
                 <div className="w-12 h-12 rounded-full bg-neutral-50 flex items-center justify-center text-accent-dark transition-colors group-hover:bg-accent-dark group-hover:text-white">
                   <Phone size={20} />
