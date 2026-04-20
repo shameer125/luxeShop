@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Calendar, User, Tag } from 'lucide-react';
 
 
-
 const Blog = () => {
   const posts = [
     {
@@ -86,6 +85,7 @@ const Blog = () => {
           ))}
         </div>
 
+        
         {/* Newsletter Callout */}
         <div className="mt-32 bg-neutral-50 p-16 md:p-24 text-center">
           <h2 className="text-3xl font-display font-bold mb-6 uppercase tracking-tight">Stay Inspired</h2>
@@ -96,6 +96,7 @@ const Blog = () => {
               placeholder="Your email address" 
               className="flex-grow bg-white border border-neutral-200 px-6 py-4 text-sm focus:ring-1 focus:ring-accent-dark outline-none"
             />
+            
             <button className="btn-primary py-4 px-10 uppercase tracking-widest font-bold text-xs whitespace-nowrap">Subscribe</button>
           </form>
         </div>
