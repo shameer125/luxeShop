@@ -6,10 +6,12 @@ import { useLocalStorage } from '../hooks/useLocalStorage';
 
 import { useStore } from '../context/StoreContext';
 
+
 const Checkout = () => {
   const [cart, setCart] = useLocalStorage('luxe_cart', []);
   const { orders, setOrders, customers, setCustomers, activities, setActivities, addOrder, products, updateEntities } = useStore();
   
+
   const [orderInfo, setOrderInfo] = useState({
     email: '',
     firstName: '',
@@ -29,6 +31,7 @@ const Checkout = () => {
   const shipping = 15;
   const total = subtotal + shipping;
 
+  
   const handleNext = (e) => {
     e.preventDefault();
     if (step < 2) setStep(step + 1);
