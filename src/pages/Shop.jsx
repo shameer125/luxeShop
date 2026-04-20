@@ -10,7 +10,6 @@ const Shop = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const categoryParam = searchParams.get('category') || 'All';
   
-  
   const [activeCategory, setActiveCategory] = useState(categoryParam);
   const [searchQuery, setSearchQuery] = useState('');
   const [sortBy, setSortBy] = useState('Featured');
@@ -41,7 +40,9 @@ const Shop = () => {
     }
   };
 
+
   const categories = ['All', 'Apparel', 'Accessories', 'Footwear'];
+
 
   const filteredProducts = products.filter(p => {
     const matchesCategory = activeCategory === 'All' || p.category === activeCategory;
@@ -55,6 +56,7 @@ const Shop = () => {
     return 0; // Featured (default)
   });
 
+  
   return (
     <div className="pt-32 pb-24 min-h-screen bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
