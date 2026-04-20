@@ -3,7 +3,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
+
 const Categories = () => {
+  
   const categories = [
     {
       id: 'apparel',
