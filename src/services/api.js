@@ -13,7 +13,6 @@ const safeParse = (data, fallback) => {
   }
 };
 
-
 export const api = {
   // Products
   getProducts: async () => {
