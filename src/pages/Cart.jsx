@@ -4,11 +4,11 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate, Link } from 'react-router-dom';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 
+
 const Cart = () => {
 const [cart, setCart] = useLocalStorage('luxe_cart', []);
 const navigate = useNavigate();
 
-  
   const updateQuantity = (id, delta) => {
     setCart(cart.map(item => 
       item.id === id ? { ...item, quantity: Math.max(1, item.quantity + delta) } : item
@@ -21,6 +21,7 @@ const navigate = useNavigate();
 
   const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 
+  
   if (cart.length === 0) {
     return (
       <div className="pt-48 pb-32 text-center max-w-7xl mx-auto px-4">
