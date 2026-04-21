@@ -13,7 +13,6 @@ const ProductDetail = () => {
   const [quantity, setQuantity] = useState(1);
   const [product, setProduct] = useState(null);
 
-
   useEffect(() => {
     const found = products.find(p => p.id === Number(id));
     if (found) setProduct(found);
@@ -28,7 +27,6 @@ const ProductDetail = () => {
     }
     alert('Added to cart!');
   };
-  
 
   const toggleWishlist = () => {
     const isWishlisted = wishlist.some(item => item.id === product.id);
