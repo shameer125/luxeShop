@@ -11,7 +11,6 @@ const [activeTab, setActiveTab] = React.useState('Overview');
 const [isEditingProfile, setIsEditingProfile] = React.useState(false);
 const [profileData, setProfileData] = React.useState({ name: user?.name || '', email: user?.email || '' });
 
-  
   if (!user) {
     navigate('/login');
     return null;
@@ -79,6 +78,7 @@ const [profileData, setProfileData] = React.useState({ name: user?.name || '', e
             </nav>
           </div>
 
+          
           {/* Main Content */}
           <div className="lg:col-span-3 space-y-12">
             {activeTab === 'Overview' && (
