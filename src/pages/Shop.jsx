@@ -56,7 +56,6 @@ const Shop = () => {
     return 0; // Featured (default)
   });
 
-  
   return (
     <div className="pt-32 pb-24 min-h-screen bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -106,6 +105,7 @@ const Shop = () => {
           </div>
         </div>
 
+        
         {/* Filter Panel */}
         <AnimatePresence>
           {showFilters && (
@@ -208,6 +208,7 @@ const Shop = () => {
           </AnimatePresence>
         </div>
 
+        
         {filteredProducts.length === 0 && (
           <div className="py-24 text-center">
             <p className="text-neutral-500 font-display text-xl">No products matched your search.</p>
