@@ -11,10 +11,12 @@ const Login = () => {
   const { user, setUser } = useStore();
   const navigate = useNavigate();
 
+
   const handleLogin = (e) => {
     e.preventDefault();
     setError('');
 
+    
     // Mock Authentication Logic
     // In a real app, this would be an API call
     if (email === 'admin@luxe.com' && password === 'admin123') {
