@@ -6,6 +6,7 @@ import { CheckCircle2, ShoppingBag, ArrowRight } from 'lucide-react';
 const OrderSuccess = () => {
   const orderNumber = Math.floor(100000 + Math.random() * 900000);
   
+  
   return (
     <div className="pt-48 pb-32 bg-white min-h-screen">
       <div className="max-w-xl mx-auto px-4 text-center">
@@ -18,7 +19,6 @@ const OrderSuccess = () => {
           <CheckCircle2 size={48} />
         </motion.div>
 
-        
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
