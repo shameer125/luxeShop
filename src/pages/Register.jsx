@@ -4,6 +4,7 @@ import { useNavigate, Link } from 'react-router-dom';
 import { ShoppingBag, ArrowRight, User, Mail, Lock } from 'lucide-react';
 import { useLocalStorage } from '../hooks/useLocalStorage';
 
+
 const Register = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -19,6 +20,7 @@ const Register = () => {
     e.preventDefault();
     setError('');
 
+    
     if (formData.password !== formData.confirmPassword) {
       setError('Passwords do not match.');
       return;
