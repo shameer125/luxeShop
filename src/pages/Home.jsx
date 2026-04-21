@@ -11,8 +11,10 @@ const Home = () => {
     { name: 'Footwear', img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&q=80&w=800', count: '300+ Items' },
   ];
 
+
   const trendingProducts = MOCK_PRODUCTS.slice(0, 4);
 
+  
   const features = [
     { icon: <Truck size={24} />, title: 'Fast Delivery', desc: 'Secure & tracked shipping' },
     { icon: <ShieldCheck size={24} />, title: 'Secure Payment', desc: '100% encrypted checkout' },
