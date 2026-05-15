@@ -43,9 +43,6 @@ const Login = () => {
           <div className="flex justify-center mb-8">
             <div className="bg-neutral-900 text-white px-4 py-2 rounded-full border border-white/10 shadow-xl flex items-center space-x-2">
               <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse" />
-              <p className="text-[9px] font-black uppercase tracking-[0.2em]">
-                Admin Access: <span className="text-white/60 lowercase font-bold">admin@luxe.com</span> / <span className="text-white/60 lowercase font-bold">admin123</span>
-              </p>
             </div>
           </div>
 
