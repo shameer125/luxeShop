@@ -45,7 +45,8 @@ const SearchOverlay = ({ isOpen, onClose }) => {
                   autoFocus
                   type="text" 
                   placeholder="WHAT ARE YOU LOOKING FOR?"
-                  className="w-full text-4xl md:text-6xl font-display font-medium border-none outline-none placeholder:text-neutral-100 uppercase tracking-tight"
+                  className="w-full text-4xl md:text-6xl font-display font-medium border-none outline-none 
+                  placeholder:text-neutral-100 uppercase tracking-tight"
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
                 />
@@ -69,7 +70,8 @@ const SearchOverlay = ({ isOpen, onClose }) => {
                   >
                     <Link to={`/product/${product.id}`} onClick={onClose} className="block">
                       <div className="aspect-[3/4] overflow-hidden bg-neutral-50 mb-4 border border-neutral-100">
-                        <img src={product.image} alt={product.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                        <img src={product.image} alt={product.name} className="w-full h-full object-cover 
+                        transition-transform duration-700 group-hover:scale-110" />
                       </div>
                       <h4 className="text-xs font-bold uppercase tracking-widest mb-1">{product.name}</h4>
                       <p className="text-[10px] text-neutral-400 uppercase">${product.price}</p>
@@ -84,7 +86,8 @@ const SearchOverlay = ({ isOpen, onClose }) => {
 
               {query && results.length > 0 && (
                 <div className="text-center mt-12">
-                  <Link to={`/shop?search=${query}`} onClick={onClose} className="text-xs font-bold uppercase tracking-[0.3em] border-b border-accent-dark pb-1 inline-flex items-center space-x-3">
+                  <Link to={`/shop?search=${query}`} onClick={onClose} className="text-xs font-bold uppercase tracking-[0.3em] border-b 
+                  border-accent-dark pb-1 inline-flex items-center space-x-3">
                     <span>View All Results</span>
                     <ArrowRight size={14} />
                   </Link>
